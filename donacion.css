@@ -9,21 +9,21 @@
 body {
      font-family: "Roboto", sans-serif;
      color: black;
-     background-color: #f0f0f0;
+     background-color:#d4e1e6;
      overflow: hidden;
      align-items: center;
+     min-height: 100vh;
 }
 
 h1 {
     margin-top: 20px;
     text-align: center;
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
 .father {
-    padding: 10px;
+    padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,24 +33,26 @@ h1 {
 .son {
     display: flex;
     flex-direction: column; 
-    gap: 10px; 
+    gap: 40px; 
     width: 100%;
     max-width: 400px;
+    padding: 30px;
 }
 
 label {
     font-weight: bold;
+   
 }
 
 input, button {
-    padding: 10px;
+    padding: 15px;
     width: 100%; 
     margin-bottom: 10px;
     border-radius: 5px; 
     border: 1px solid #ccc; 
 }
 button {
-    background-color: #007BFF;
+    background-color: #39abcd;
     color: white;
     border: none; 
     cursor: pointer;
@@ -58,22 +60,35 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; 
+    background-color: #39abcd; 
 }
 
 footer {
     color: black;
     text-align: center;
-    margin-top: 220px;
+   
     padding: 20px;
     background-color: #f1f1f1;
+    font-weight: bold;
 }
-.enviar{
+.enviar {
     color: black;
     border-radius: 5px;
     cursor: pointer;
+    width: 30%;
+    margin: 0 auto; 
+    display: block; 
+    padding: 10px;
 }
+
+ 
+
 .enviar:hover{
     background-color: #cfd6dd; 
     
+}
+
+.nombre{
+    margin: 3px;
+    padding: 5px;
 }
