@@ -16,6 +16,7 @@ body {
     background-color: #eee;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -23,7 +24,9 @@ header {
     width: 96%;
     margin: 15px auto;
 }
-
+header h2 {
+    font-size: 1.3rem;
+}
 nav {
     display: flex;
     justify-content: center;
@@ -33,7 +36,7 @@ nav {
 nav a {
     color: #39abcd;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .icono {
@@ -45,7 +48,11 @@ nav a {
 }
 
 .icono img {
-    width: 50px;
+    width: 40px;
+}
+
+main {
+    height: 90vh;
 }
 
 .section_titulo {
@@ -102,7 +109,6 @@ nav a {
 footer {
     width: 90%;
     margin: auto;
-    margin-top: 180px;
     font-size: 0.9rem;
     display: flex;
     justify-content: space-between;

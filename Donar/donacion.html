@@ -7,13 +7,23 @@
     <title>Donaciones</title>
     <link rel="stylesheet" href="donacion.css">
     <script src="https://kit.fontawesome.com/8ca6fcbba1.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <main>
-
+        <header>
+            <a href="/Inicio/inicio.html" class="icono">
+                <img src="/Imagenes/logo.png" alt="">
+                <h2>AccessPrint</h2>
+            </a>
+            <nav>
+                <a href="">¿Quines somos?</a>
+                <a href="">Preguntas frecuentes</a>
+            </nav>
+        </header>
         <section class="formulario">
-            <h1>Complete el siguiente formulario</h1>
+            <h1>Formulario para realizar donación</h1>
             <form action="form.php" method="POST">
 
                 <div class="coolinput">
@@ -39,44 +49,47 @@
                 <div class="nombre">
 
                     <div class="container">
-                        <form>
-                            <label>
-                                <input type="radio" name="radio" checked="">
-                                <span>Ropa</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="radio">
-                                <span>Alimentos no perecederos</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="radio">
-                                <span>Dinero</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="radio" checked="">
-                                <span>Otros</span>
-                            </label>
-                        </form>
+                        <label>
+                            <input type="radio" name="radio" value="ropa">
+                            <span>Ropa</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" value="alimentos">
+                            <span>Alimentos no perecederos</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" value="dinero">
+                            <span>Dinero</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" value="otros" id="otros-radio">
+                            <span>Otros</span>
+                        </label>
                     </div>
-    
+                    <div class="coolinput" id="other-input">
+                        <input type="text" placeholder="Especifica aqui..." name="input" class="input">
+                    </div>
+
                 </div>
                 <button>
-                   Enviar
+                    Enviar
                 </button>
             </form>
         </section>
-        <footer>
-            <div>
-                <p>&copy; 2024 AccessPrint. Todos los derechos reservados.</p>
-            </div>
-            <div class="redes_sociales">
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-            </div>
-        </footer>
+        
     </main>
+    <footer>
+        <div>
+            <p>&copy; 2024 AccessPrint. Todos los derechos reservados.</p>
+        </div>
+        <div class="redes_sociales">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="donacion.js"></script>
 </body>
 
 </html>
